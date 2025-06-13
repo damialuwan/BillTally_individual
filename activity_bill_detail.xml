@@ -1,0 +1,69 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#0051A2">
+
+    <TextView
+        android:id="@+id/textMonth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MONTH: "
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/textUnit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Units: "
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/textMonth"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/textTotalCharges"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total Charge: "
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/textUnit"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/textRebate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rebate: "
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/textTotalCharges"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/textFinalCost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Final Cost: "
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/textRebate"
+        android:textColor="@android:color/white"/>
+
+    <Button
+        android:id="@+id/buttonBackToList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="260dp"
+        android:layout_marginTop="648dp"
+        android:backgroundTint="#FF9800"
+        android:padding="12dp"
+        android:text="Back to List"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
